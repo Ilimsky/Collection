@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Android Changing Language</string>
+    <string name="display_text" translatable="true">I love software development and general programming</string>
+</resources>
