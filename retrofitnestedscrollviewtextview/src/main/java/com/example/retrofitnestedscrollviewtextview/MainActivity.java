@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textView = findViewById(R.id.text_view);
+        textView = findViewById(R.id.text);
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(URL)

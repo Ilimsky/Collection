@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        TextView indicatorText = (TextView) findViewById(R.id.language_indicator);
+        TextView indicatorText = findViewById(R.id.language_indicator);
 
         if (getLangCode().contentEquals("en")) {
             indicatorText.setText("English");
