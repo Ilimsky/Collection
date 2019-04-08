@@ -52,12 +52,12 @@ public class MainActivity extends AppCompatActivity implements UniversalVideoVie
 
         mVideoLayout = findViewById(R.id.video_layout);
         mBottomLayout = findViewById(R.id.bottom_layout);
-        mVideoView = (UniversalVideoView) findViewById(R.id.videoView);
-        mMediaController = (UniversalMediaController) findViewById(R.id.media_controller);
+        mVideoView = findViewById(R.id.videoView);
+        mMediaController = findViewById(R.id.media_controller);
         mVideoView.setMediaController(mMediaController);
         setVideoAreaSize();
         mVideoView.setVideoViewCallback(this);
-        mStart = (TextView) findViewById(R.id.start);
+        mStart = findViewById(R.id.start);
 
         mStart.setOnClickListener(new View.OnClickListener() {
             @Override
