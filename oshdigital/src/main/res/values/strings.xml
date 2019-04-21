@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Osh Digital</string>
+    <string name="user_qr_code">Object name</string>
+    <string name="text_about_object">Here must the text about object</string>
+    <string name="confirmation_button">Back</string>
+    <string name="action_refresh">Refresh</string>
+</resources>
