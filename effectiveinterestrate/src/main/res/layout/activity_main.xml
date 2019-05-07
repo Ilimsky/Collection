@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewLoanSum"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/loan_sum"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLoanSum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLoanSum"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="numberDecimal"
+        android:selectAllOnFocus="true"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLoanTerm"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/loan_term"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLoanTerm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanSum" />
+
+    <EditText
+        android:id="@+id/editTextLoanTerm"
+        android:selectAllOnFocus="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanSum" />
+
+    <TextView
+        android:id="@+id/textViewLoanRate"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/loan_rate"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLoanRate"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanTerm" />
+
+    <EditText
+        android:id="@+id/editTextLoanRate"
+        android:selectAllOnFocus="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanTerm" />
+
+    <TextView
+        android:id="@+id/textViewLoanCommission"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/loan_commission"
+        app:layout_constraintEnd_toStartOf="@+id/editTextLoanCommission"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanRate" />
+
+    <EditText
+        android:id="@+id/editTextLoanCommission"
+        android:selectAllOnFocus="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanRate" />
+
+    <TextView
+        android:id="@+id/textViewCashingOut"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/loan_cashing_out"
+        app:layout_constraintEnd_toStartOf="@+id/editTextCashingOut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLoanCommission" />
+
+    <EditText
+        android:id="@+id/editTextCashingOut"
+        android:selectAllOnFocus="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLoanCommission" />
+
+    <TextView
+        android:id="@+id/textViewTax"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/loan_tax"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTax"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCashingOut" />
+
+    <EditText
+        android:id="@+id/editTextTax"
+        android:selectAllOnFocus="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:inputType="numberDecimal"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCashingOut" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/button_clear"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalculate"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTax" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="@string/button_calculate"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSchedule"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTax" />
+
+    <Button
+        android:id="@+id/buttonSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/button_schedule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTax" />
+
+    <TextView
+        android:id="@+id/textViewTextOfPayment"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/output_payment"
+        app:layout_constraintEnd_toStartOf="@+id/textViewPayment"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClear" />
+
+    <TextView
+        android:id="@+id/textViewPayment"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSchedule" />
+
+    <TextView
+        android:id="@+id/textViewTextOfAmount"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/output_refundable_amount"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextOfPayment" />
+
+    <TextView
+        android:id="@+id/textViewAmount"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/zero_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPayment" />
+
+    <TextView
+        android:id="@+id/textViewTextOfInterestRate"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/output_effective_interest_rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewInterestRate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTextOfAmount" />
+
+    <TextView
+        android:id="@+id/textViewInterestRate"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/zero_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmount" />
+</android.support.constraint.ConstraintLayout>
