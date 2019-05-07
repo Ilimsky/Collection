@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.aviasales:aviasalesSdk:2.1.12-sdk@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e9d0e7c44f4e10a9780d2e5fe58a42/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e9d0e7c44f4e10a9780d2e5fe58a42/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2e9d0e7c44f4e10a9780d2e5fe58a42/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ru.aviasales/aviasalesSdk/2.1.12-sdk/4cfec564e61080784639974f0b94a8a88807d048/aviasalesSdk-2.1.12-sdk-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

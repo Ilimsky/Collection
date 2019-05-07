@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: ru.aviasales.template:aviasalesSdkTemplate:2.1.12@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84d273aaac47e3b83a68bce46fe8255b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/84d273aaac47e3b83a68bce46fe8255b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
