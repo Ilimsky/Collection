@@ -28,8 +28,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".QR.QRActivity"/>
-
     </application>
 
 </manifest>

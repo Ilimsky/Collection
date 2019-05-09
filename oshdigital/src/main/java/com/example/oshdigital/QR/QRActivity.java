@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -13,8 +15,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.MediaController;
+import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.example.oshdigital.Basic.MainActivity;
@@ -29,8 +31,12 @@ import retrofit2.Response;
 
 public class QRActivity extends AppCompatActivity {
 
-    MediaPlayer player;
     private String urlAudio;
+    Button playBtn;
+    SeekBar positionBar;
+    TextView remainingTimeLabel;
+    MediaPlayer mp;
+    int totalTime;
 
     private String qrResult;
     private int qrCode;
@@ -53,8 +59,12 @@ public class QRActivity extends AppCompatActivity {
         loadData();
         initRecyclerView();
 
+        playBtn = findViewById(R.id.playBtn);
+        remainingTimeLabel = findViewById(R.id.remainingTimeLabel);
+
         textFromApi = findViewById(R.id.text_from_api);
         textViewQR = findViewById(R.id.text_view_qrcode);
+
 
         Bundle args = getIntent().getExtras();
         qrResult = args.getString("qr_result");
@@ -69,6 +79,45 @@ public class QRActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            int currentPosition = msg.what;
+            // Update positionBar.
+            positionBar.setProgress(currentPosition);
+
+            String remainingTime = createTimeLabel(totalTime-currentPosition);
+            remainingTimeLabel.setText("- " + remainingTime);
+        }
+    };
+
+    public String createTimeLabel(int time) {
+        String timeLabel = "";
+        int min = time / 1000 / 60;
+        int sec = time / 1000 % 60;
+
+        timeLabel = min + ":";
+        if (sec < 10) timeLabel += "0";
+        timeLabel += sec;
+
+        return timeLabel;
+    }
+
+    public void playBtnClick(View view) {
+
+        if (!mp.isPlaying()) {
+            // Stopping
+            mp.start();
+            playBtn.setBackgroundResource(R.drawable.stop);
+
+        } else {
+            // Playing
+            mp.pause();
+            playBtn.setBackgroundResource(R.drawable.play);
+        }
 
     }
 
@@ -108,6 +157,60 @@ public class QRActivity extends AppCompatActivity {
                     videoView.setMediaController(mediaController);
                     videoView.setVideoURI(Uri.parse(urlVideo));
 
+
+
+
+                    mediaController.setAnchorView(videoView);
+                    videoView.setMediaController(mediaController);
+                    videoView.setVideoURI(Uri.parse(urlVideo));
+
+                    // Media Player
+                    mp = MediaPlayer.create(getBaseContext(), Uri.parse(urlAudio));
+                    mp.setLooping(true);
+                    mp.seekTo(0);
+                    mp.setVolume(0.5f, 0.5f);
+                    totalTime = mp.getDuration();
+
+                    // Position Bar
+                    positionBar = findViewById(R.id.positionBar);
+                    positionBar.setMax(totalTime);
+                    positionBar.setOnSeekBarChangeListener(
+                            new SeekBar.OnSeekBarChangeListener() {
+                                @Override
+                                public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                                    if (fromUser) {
+                                        mp.seekTo(progress);
+                                        positionBar.setProgress(progress);
+                                    }
+                                }
+
+                                @Override
+                                public void onStartTrackingTouch(SeekBar seekBar) {
+
+                                }
+
+                                @Override
+                                public void onStopTrackingTouch(SeekBar seekBar) {
+
+                                }
+                            }
+                    );
+
+                    // Thread (Update positionBar & timeLabel)
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            while (mp != null) {
+                                try {
+                                    Message msg = new Message();
+                                    msg.what = mp.getCurrentPosition();
+                                    handler.sendMessage(msg);
+                                    Thread.sleep(1000);
+                                } catch (InterruptedException e) {}
+                            }
+                        }
+                    }).start();
+
                 } else {
                     try {
                         Log.e(TAG, "onResponse: " + response.errorBody().string());
@@ -134,43 +237,6 @@ public class QRActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayoutManager.HORIZONTAL, false));
     }
 
-    public void play(View v) {
-        if (player == null) {
-            player = MediaPlayer.create(this, Uri.parse(this.urlAudio));
-            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-                    stopPlayer();
-                }
-            });
-        }
-
-        player.start();
-    }
-
-    public void pause(View v) {
-        if (player != null) {
-            player.pause();
-        }
-    }
-
-    public void stop(View v) {
-        stopPlayer();
-    }
-
-    private void stopPlayer() {
-        if (player != null) {
-            player.release();
-            player = null;
-            Toast.makeText(this, "MediaPlayer released", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        stopPlayer();
-    }
 
 }
 
