@@ -8,12 +8,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/annuitet" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/cash" />
             <option value="$PROJECT_DIR$/changinglanguage" />
             <option value="$PROJECT_DIR$/effectiveinterestrate" />
             <option value="$PROJECT_DIR$/inputoutputapimedonet" />
+            <option value="$PROJECT_DIR$/loancalc" />
             <option value="$PROJECT_DIR$/logcat" />
             <option value="$PROJECT_DIR$/mediaplayer" />
             <option value="$PROJECT_DIR$/oshdigital" />

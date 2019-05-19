@@ -15,14 +15,14 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/linearLayout5000"
+                android:id="@+id/linearLayout2000"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp">
 
                 <Button
-                    android:id="@+id/btn5000"
+                    android:id="@+id/btn2000"
                     android:layout_width="100dp"
                     android:layout_height="35dp"
                     android:layout_marginLeft="5dp"

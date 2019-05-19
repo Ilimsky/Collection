@@ -20,9 +20,9 @@ public class KGS extends Fragment implements View.OnClickListener {
         // Required empty public constructor
     }
 
-    Button btn5000, btn1000, btn500, btn200, btn100, btn50, btn20, btn10, btn5, btn3, btn1, btn050, btn010, btn001;
-    EditText et5000, et1000, et500, et200, et100, et50, et20, et10, et5, et3, et1, et050, et010, et001;
-    TextView tv5000, tv1000, tv500, tv200, tv100, tv50, tv20, tv10, tv5, tv3, tv1, tv050, tv010, tv001, tvTotal;
+    Button btn5000, btn2000, btn1000, btn500, btn200, btn100, btn50, btn20, btn10, btn5, btn3, btn1, btn050, btn010, btn001;
+    EditText et5000, et2000, et1000, et500, et200, et100, et50, et20, et10, et5, et3, et1, et050, et010, et001;
+    TextView tv5000, tv2000, tv1000, tv500, tv200, tv100, tv50, tv20, tv10, tv5, tv3, tv1, tv050, tv010, tv001, tvTotal;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +35,11 @@ public class KGS extends Fragment implements View.OnClickListener {
         et5000 = view.findViewById(R.id.et5000);
         tv5000 = view.findViewById(R.id.tv5000);
         btn5000.setOnClickListener(this);
+
+        btn2000 = view.findViewById(R.id.btn2000);
+        et2000 = view.findViewById(R.id.et2000);
+        tv2000 = view.findViewById(R.id.tv2000);
+        btn2000.setOnClickListener(this);
 
         btn1000 = view.findViewById(R.id.btn1000);
         et1000 = view.findViewById(R.id.et1000);
@@ -115,8 +120,8 @@ public class KGS extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
-        int num5000, num1000, num500, num200,num100,num50,num20,num10,num5,num3,num1;
-        int result5000, result1000, result500, result200, result100, result50, result20, result10, result5, result3, result1;
+        int num5000, num2000, num1000, num500, num200,num100,num50,num20,num10,num5,num3,num1;
+        int result5000, result2000, result1000, result500, result200, result100, result50, result20, result10, result5, result3, result1;
 
         double num050, num010, num001;
         double result050, result010, result001, resultTotal;
@@ -125,6 +130,12 @@ public class KGS extends Fragment implements View.OnClickListener {
         result5000 = 5000 * num5000;
         resultTotal = result5000;
         tv5000.setText(" " + result5000);
+        tvTotal.setText(" " + resultTotal);
+
+        num2000 = Integer.parseInt(et2000.getText().toString());
+        result2000 = 2000 * num2000;
+        resultTotal = result2000;
+        tv2000.setText(" " + result2000);
         tvTotal.setText(" " + resultTotal);
 
         num1000 = Integer.parseInt(et1000.getText().toString());
@@ -212,6 +223,7 @@ public class KGS extends Fragment implements View.OnClickListener {
         switch (item.getItemId()) {
             case MENU_RESET_ID:
                 et5000.setText("0");
+                et2000.setText("0");
                 tv5000.setText("");
                 et1000.setText("0");
                 tv1000.setText("");
