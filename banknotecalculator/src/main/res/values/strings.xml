@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Banknote Calculator</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="zero">0</string>
+    <string name="clear_kg">Тазалоо үчүн ушул жерди баскыла</string>
+    <string name="clear_de">Klicken Sie auf diese zu bereinigen</string>
+    <string name="clear_kz">Тазалау үшін осы батырмасын басыңыз</string>
+    <string name="clear_ru">Для очистки нажмите здесь</string>
+    <string name="clear_us">Click on this to clean up</string>
+</resources>

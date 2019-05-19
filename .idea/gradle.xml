@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/cash" />
+            <option value="$PROJECT_DIR$/banknotecalculator" />
             <option value="$PROJECT_DIR$/changinglanguage" />
             <option value="$PROJECT_DIR$/effectiveinterestrate" />
             <option value="$PROJECT_DIR$/inputoutputapimedonet" />
