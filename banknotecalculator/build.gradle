@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\Publish\\MyKey.jks')
+            storePassword 'P@ssw0rd14041977'
+            keyAlias = 'Romantische Nomade'
+            keyPassword 'P@ssw0rd14041977'
+        }
+    }
     compileSdkVersion 28
 
 
