@@ -22,7 +22,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="270dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,12 +36,12 @@
 
                 <Button
                     android:id="@+id/btn20000"
-                    android:text="20000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="20000"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et20000"
@@ -71,12 +71,12 @@
 
                 <Button
                     android:id="@+id/btn10000"
-                    android:text="10000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="10000"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et10000"
@@ -106,12 +106,12 @@
 
                 <Button
                     android:id="@+id/btn5000"
-                    android:text="5000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="5000"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et5000"
@@ -141,12 +141,12 @@
 
                 <Button
                     android:id="@+id/btn2000"
-                    android:text="2000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="2000"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et2000"
@@ -176,12 +176,12 @@
 
                 <Button
                     android:id="@+id/btn1000"
-                    android:text="1000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="1000"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et1000"
@@ -211,12 +211,12 @@
 
                 <Button
                     android:id="@+id/btn500"
-                    android:text="500"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="500"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et500"
@@ -246,12 +246,12 @@
 
                 <Button
                     android:id="@+id/btn200"
-                    android:text="200"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="200"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et200"
@@ -281,12 +281,12 @@
 
                 <Button
                     android:id="@+id/btn100"
-                    android:text="100"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="100"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et100"
@@ -316,12 +316,12 @@
 
                 <Button
                     android:id="@+id/btn50"
-                    android:text="50"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="50"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et50"
@@ -351,12 +351,12 @@
 
                 <Button
                     android:id="@+id/btn20"
-                    android:text="20"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="20"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et20"
@@ -386,12 +386,12 @@
 
                 <Button
                     android:id="@+id/btn10"
-                    android:text="10"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="10"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et10"
@@ -421,12 +421,12 @@
 
                 <Button
                     android:id="@+id/btn5"
-                    android:text="5"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="5"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et5"
@@ -456,12 +456,12 @@
 
                 <Button
                     android:id="@+id/btn2"
-                    android:text="2"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="2"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et2"
@@ -491,12 +491,12 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:text="1"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="1"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et1"
@@ -526,12 +526,12 @@
 
                 <Button
                     android:id="@+id/btn050"
-                    android:text="50 тиын"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="50 тиын"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et050"
@@ -561,12 +561,12 @@
 
                 <Button
                     android:id="@+id/btn020"
-                    android:text="20 тиын"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="20 тиын"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et020"
@@ -596,12 +596,12 @@
 
                 <Button
                     android:id="@+id/btn010"
-                    android:text="10 тиын"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="10 тиын"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et010"
@@ -631,12 +631,12 @@
 
                 <Button
                     android:id="@+id/btn005"
-                    android:text="5 тиын"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="5 тиын"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et005"
@@ -666,12 +666,12 @@
 
                 <Button
                     android:id="@+id/btn002"
-                    android:text="2 тиын"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
-                    tools:textSize="18sp"/>
+                    android:text="2 тиын"
+                    tools:textSize="18sp" />
 
                 <EditText
                     android:id="@+id/et002"

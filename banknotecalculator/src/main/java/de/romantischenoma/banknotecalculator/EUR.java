@@ -220,6 +220,7 @@ public class EUR extends Fragment implements View.OnClickListener {
         tvTotal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                et500.setText("0");
                 tv500.setText("");
                 et200.setText("0");
                 tv200.setText("");

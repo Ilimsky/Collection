@@ -8,6 +8,12 @@ android {
             keyAlias = 'Romantische Nomade'
             keyPassword 'P@ssw0rd14041977'
         }
+        config {
+            storeFile file('D:\\Publish\\MyKey.jks')
+            storePassword 'P@ssw0rd14041977'
+            keyAlias = 'Romantische Nomade'
+            keyPassword 'P@ssw0rd14041977'
+        }
     }
     compileSdkVersion 28
 
@@ -27,6 +33,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
 

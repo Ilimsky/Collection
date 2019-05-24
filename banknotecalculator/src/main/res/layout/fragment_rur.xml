@@ -22,7 +22,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp">
+        android:layout_height="270dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,11 +36,11 @@
 
                 <Button
                     android:id="@+id/btn5000"
-                    android:text="5000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="5000"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -71,11 +71,11 @@
 
                 <Button
                     android:id="@+id/btn1000"
-                    android:text="1000"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="1000"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -106,11 +106,11 @@
 
                 <Button
                     android:id="@+id/btn500"
-                    android:text="500"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="500"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -141,11 +141,11 @@
 
                 <Button
                     android:id="@+id/btn100"
-                    android:text="100"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="100"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -176,11 +176,11 @@
 
                 <Button
                     android:id="@+id/btn50"
-                    android:text="50"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="50"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -211,11 +211,11 @@
 
                 <Button
                     android:id="@+id/btn10"
-                    android:text="10"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="10"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -246,11 +246,11 @@
 
                 <Button
                     android:id="@+id/btn5"
-                    android:text="5"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="5"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -281,11 +281,11 @@
 
                 <Button
                     android:id="@+id/btn2"
-                    android:text="2"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="2"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -316,11 +316,11 @@
 
                 <Button
                     android:id="@+id/btn1"
-                    android:text="1"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="1"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -351,11 +351,11 @@
 
                 <Button
                     android:id="@+id/btn050"
-                    android:text="50 копеек"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="50 копеек"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -386,11 +386,11 @@
 
                 <Button
                     android:id="@+id/btn010"
-                    android:text="10 копеек"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="10 копеек"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -421,11 +421,11 @@
 
                 <Button
                     android:id="@+id/btn005"
-                    android:text="5 копеек"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="5 копеек"
                     tools:textSize="18sp" />
 
                 <EditText
@@ -456,11 +456,11 @@
 
                 <Button
                     android:id="@+id/btn001"
-                    android:text="1 копейка"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_weight="1"
                     android:background="@drawable/rounded_button"
+                    android:text="1 копейка"
                     tools:textSize="18sp" />
 
                 <EditText
