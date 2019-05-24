@@ -14,7 +14,6 @@ import android.widget.TextView;
  */
 public class EUR extends Fragment implements View.OnClickListener {
 
-    final int MENU_RESET_ID = 1;
     public EUR() {
         // Required empty public constructor
     }

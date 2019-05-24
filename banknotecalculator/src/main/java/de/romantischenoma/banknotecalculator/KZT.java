@@ -14,7 +14,6 @@ import android.widget.TextView;
  */
 public class KZT extends Fragment implements View.OnClickListener {
 
-    final int MENU_RESET_ID = 1;
     public KZT() {
         // Required empty public constructor
     }
