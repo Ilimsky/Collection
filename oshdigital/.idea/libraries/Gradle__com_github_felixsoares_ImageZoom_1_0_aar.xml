@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.felixsoares:ImageZoom:1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c49795664631ac34bbbee75895ee8ea/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8c49795664631ac34bbbee75895ee8ea/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/835f2b16b06888581c7b5dc730604a8f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/835f2b16b06888581c7b5dc730604a8f/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

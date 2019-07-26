@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.linsea:universalvideoview:1.1.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11c24af5ebbf10567466a3f2aae07526/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/11c24af5ebbf10567466a3f2aae07526/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e700011ff37e2add7e89240ffa6a93f8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e700011ff37e2add7e89240ffa6a93f8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

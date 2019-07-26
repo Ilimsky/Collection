@@ -3,9 +3,42 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="zero">0</string>
-    <string name="clear_kg">Тазалоо үчүн ушул жерди баскыла</string>
+    <string name="clear_kg">Тазалоо үчүн ушул жерди басыңыз</string>
     <string name="clear_de">Klicken Sie auf diese zu bereinigen</string>
     <string name="clear_kz">Тазалау үшін осы батырмасын басыңыз</string>
     <string name="clear_ru">Для очистки нажмите здесь</string>
     <string name="clear_us">Click on this to clean up</string>
+    <string name="_5000">5000</string>
+    <string name="_2000">2000</string>
+    <string name="_1000">1000</string>
+    <string name="_500">500</string>
+    <string name="_200">200</string>
+    <string name="_100">100</string>
+    <string name="_50">50</string>
+    <string name="_20">20</string>
+    <string name="_10">10</string>
+    <string name="_5">5</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="_50_cents">50 cents</string>
+    <string name="_20_cents">20 cents</string>
+    <string name="_10_cents">10 cents</string>
+    <string name="_5_cents">5 cents</string>
+    <string name="_2_cents">2 cents</string>
+    <string name="_1_cent">1 cent</string>
+    <string name="_50_тыйын">50 тыйын</string>
+    <string name="_10_тыйын">10 тыйын</string>
+    <string name="_1_тыйын">1 тыйын</string>
+    <string name="_20000">20000</string>
+    <string name="_10000">10000</string>
+    <string name="_50_тиын">50 тиын</string>
+    <string name="_20_тиын">20 тиын</string>
+    <string name="_10_тиын">10 тиын</string>
+    <string name="_5_тиын">5 тиын</string>
+    <string name="_2_тиын">2 тиын</string>
+    <string name="_50_копеек">50 копеек</string>
+    <string name="_10_копеек">10 копеек</string>
+    <string name="_5_копеек">5 копеек</string>
+    <string name="_25_cents">25 cents</string>
 </resources>

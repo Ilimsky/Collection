@@ -165,7 +165,7 @@ public class AFragment extends Fragment {
                     }
                 });
             } else {
-                Toast.makeText(getActivity().getApplicationContext(), "Not able to fetch data from server, please check url.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext().getApplicationContext(), "Not able to fetch data from server, please check url.", Toast.LENGTH_SHORT).show();
             }
         }
     }

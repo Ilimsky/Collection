@@ -222,6 +222,8 @@ public class RUR extends Fragment implements View.OnClickListener {
                 tv010.setText("");
                 et005.setText("0");
                 tv005.setText("");
+                et001.setText("0");
+                tv001.setText("");
                 tvTotal.setText("Для очистки нажмите здесь");
             }
         });

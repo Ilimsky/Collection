@@ -25,11 +25,10 @@ public class QRActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Model>> call, Response<List<Model>> response) {
                 if (response.body() != null && response.isSuccessful()) {
-                    textView.append("" + response.body().size());
                     List<Model> models = response.body();
-                    Model model = models.get(1);
-                    textView.append(model.getDescription() + "\n\n");
+                    Model model = models.get(0);
                     textView.append(model.getId() + "\n\n");
+                    textView.append(model.getTitle() + "\n\n");
 
                 } else{
                         textView.append("" + response.code());

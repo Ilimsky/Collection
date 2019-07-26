@@ -49,5 +49,4 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFrag(new EUR(), "EUR");
         viewPager.setAdapter(adapter);
     }
-
 }
